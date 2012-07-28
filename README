@@ -1,0 +1,20 @@
+Wiimote plugin for Stellarium
+With this plugin you can actually "drive" stellarium using gyroscope sensors present on wiimote with motion plus.
+For this to compile you need to set STELROOT environment variable to an exsisting stellarium build directory.
+You also need cln and cwiid headers (in ubuntu, libcln-dev and libcwiid-dev).
+Then, try these steps:
+	cd WiimotePlugin
+	mkdir build
+	cmake ..
+	make all install
+(make install will install the plugin in your $HOME/.stellarium directory).
+
+To make it work: you need bluetooth, since Wiimote uses bluetooth to connect.
+Then, enable the plugin in stellarium and follow instructions in the Wiimote Window (open it with ALT+W).
+
+Current status: kinda works, but it's just in experimental stage.
+It will works fine enough only if wiimote is perfectly aligned to the telescope axis, and to the horizon (meaning, when the telescope is pointing north at 0deg alt, wiimote will have to point north too, and will have to face ground).
+"Invert delta axis" option can actually make it work even if it's facing sky, but it still has to be ground aligned.
+
+
+Enjoy!
