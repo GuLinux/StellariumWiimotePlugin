@@ -15,6 +15,7 @@ Then, enable the plugin in stellarium and follow instructions in the Wiimote Win
 Current status: kinda works, but it's just in experimental stage.
 It will works fine enough only if wiimote is perfectly aligned to the telescope axis, and to the horizon (meaning, when the telescope is pointing north at 0deg alt, wiimote will have to point north too, and will have to face ground).
 "Invert delta axis" option can actually make it work even if it's facing sky, but it still has to be ground aligned.
+So at the moment, only altaz mounts can work.
 
 
 Enjoy!
